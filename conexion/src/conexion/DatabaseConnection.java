@@ -3,6 +3,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import javax.swing.JOptionPane;
+
 public class DatabaseConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/prueba";
     private static final String USER = "root";
@@ -12,6 +14,7 @@ public class DatabaseConnection {
     
     private Connection connection;
     
+    //genera la bdd cuanto usa el constructor
     private DatabaseConnection() {
         try {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
