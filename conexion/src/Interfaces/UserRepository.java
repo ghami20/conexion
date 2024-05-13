@@ -1,6 +1,8 @@
-package conexion;
+package Interfaces;
 
 import java.util.List;
+
+import Modelo.Usuario;
 
 public interface UserRepository {
 	//prototipos de metodos 

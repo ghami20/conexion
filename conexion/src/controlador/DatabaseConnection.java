@@ -1,4 +1,4 @@
-package conexion;
+package controlador;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -18,8 +18,11 @@ public class DatabaseConnection {
     private DatabaseConnection() {
         try {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
+            JOptionPane.showMessageDialog(null, "Se conecto");
         } catch (SQLException e) {
             e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "No se conecto");
+
         }
     }
     

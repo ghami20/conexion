@@ -1,4 +1,4 @@
-package conexion;
+package Modelo;
 
 public class Usuario {
 	private int id;

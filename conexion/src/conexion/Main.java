@@ -4,6 +4,9 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
+import Modelo.Usuario;
+import controlador.UsuarioControlador;
+
 public class Main {
 	public static void main(String[] args) {
 		UsuarioControlador usuarioControlador = new UsuarioControlador();
