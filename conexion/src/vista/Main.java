@@ -1,4 +1,4 @@
-package conexion;
+package vista;
 
 import java.util.List;
 
@@ -9,8 +9,11 @@ import controlador.UsuarioControlador;
 
 public class Main {
 	public static void main(String[] args) {
+		int numer = Integer.parseInt(JOptionPane.showInputDialog("Ingrese"));
 		UsuarioControlador usuarioControlador = new UsuarioControlador();
 
+		
+		
 		String[] opciones = { "Agregar usuario", "Ver usuario por id", "Ver usuarios en general", "Editar usuario",
 				"Eliminar usuario","Salir" };
 		int opcion = 0;
