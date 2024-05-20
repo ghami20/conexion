@@ -36,5 +36,19 @@ public class Usuario {
 	public String toString() {
 		return "Usuario [id=" + id + ", nombre=" + nombre + ", email=" + email + "]";
 	}
+	public boolean IniciarSesion(String nombre,String mail) {
+		if (this.getEmail().equals(mail)){
+			if( this.getNombre().equals(nombre)) {
+				return true;
+			} else {
+				//Error nombre
+				return false;
+			}
+					
+		} else {
+			//Error mail
+			return false;
+		}
+	}
 	
 }
