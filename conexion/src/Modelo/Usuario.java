@@ -37,17 +37,23 @@ public class Usuario {
 		return "Usuario [id=" + id + ", nombre=" + nombre + ", email=" + email + "]";
 	}
 	public boolean IniciarSesion(String nombre,String mail) {
-		if (this.getEmail().equals(mail)){
-			if( this.getNombre().equals(nombre)) {
-				return true;
+		if (nombre.length()>=8 && mail.length()>=8) {
+				
+			if (this.getEmail().equals(mail)){
+				if( this.getNombre().equals(nombre)) {
+					return true;
+				} else {
+					//Error nombre
+					return false;
+				}
+						
 			} else {
-				//Error nombre
+				//Error mail
 				return false;
 			}
-					
 		} else {
-			//Error mail
 			return false;
+	
 		}
 	}
 	
